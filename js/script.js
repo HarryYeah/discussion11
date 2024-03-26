@@ -11,8 +11,19 @@ document.getElementById('collaborator-2-name').innerHTML = 'Harry';
 // You can also create their own CSS classes in style.css file and use that. 
 
 
-
-
+let floatingButton = document.querySelector("#instruction_button");
+floatingButton.addEventListener("click",hideInstructions);
+function hideInstructions() {
+    let allQuestions = document.querySelectorAll('.question');
+    for (let x of allQuestions) {
+        x.classList.toggle("hidden");
+    }
+    if (this.innerHTML === "Hide Instructions") {
+        this.innerHTML = "Show Instructions";
+    } else {
+        this.innerHTML = "Hide Instructions";
+    }
+}
 
 // Question 3
 // Try change event first
@@ -38,7 +49,16 @@ firstName.addEventListener('input', function(){
 // Question 5
 // Try change event first
 // There is another event which fires for every character. This is what we want to use.
-
+let password = document.getElementById('password');
+let confirmPassword = document.getElementById('confirm_password');
+let alert = document.getElementById('password-alert');
+password.addEventListener('input', function(){
+    if(password.value === confirmPassword.value){
+        alert.innerHTML = 'Password matches';
+    }else{
+        alert.innerHTML = "Password doesn't match";
+    }
+});
 
 
 
@@ -55,7 +75,7 @@ firstName.addEventListener('input', function(){
 
 
 //Question 8
-
+let colorPicker = document.getElementById('color-picker')
 
 
 
