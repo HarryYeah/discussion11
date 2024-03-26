@@ -29,8 +29,8 @@ function hideInstructions() {
 // Try change event first
 // There is another event which fires for every character. This is what we want to use.
 // As the user types, if the user enters first name as 'John', autopopulate the last name to 'Doe'
-let firstName = document.getElementById('first-name');
-let lastName = document.getElementById('last-name');
+let firstName = document.getElementById('first_name');
+let lastName = document.getElementById('last_name');
 
 firstName.addEventListener('input', function(){
     if(firstName.value == 'John'){
