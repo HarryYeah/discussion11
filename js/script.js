@@ -34,7 +34,7 @@ let lastName = document.getElementById('last_name');
 
 firstName.addEventListener('input', function(){
     if(firstName.value == 'John'){
-        lastName.value = 'Joe';
+        lastName.value = 'Doe';
     }
 });
 
