@@ -50,7 +50,7 @@ firstName.addEventListener('input', function(){
 let password = document.getElementById('password');
 let confirmPassword = document.getElementById('confirm_password');
 let alert = document.getElementById('password-alert');
-password.addEventListener('input', function(){
+confirmPassword.addEventListener('input', function(){
     if(password.value === confirmPassword.value){
         alert.innerHTML = 'Password matches';
     }else{
