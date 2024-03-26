@@ -12,8 +12,7 @@ document.getElementById('collaborator-2-name').innerHTML = 'Harry';
 
 
 let floatingButton = document.querySelector("#instruction_button");
-floatingButton.addEventListener("click",hideInstructions);
-function hideInstructions() {
+floatingButton.addEventListener("click", function hideInstructions() {
     let allQuestions = document.querySelectorAll('.question');
     for (let x of allQuestions) {
         x.classList.toggle("hidden");
@@ -23,7 +22,7 @@ function hideInstructions() {
     } else {
         this.innerHTML = "Hide Instructions";
     }
-}
+});
 
 // Question 3
 // Try change event first
