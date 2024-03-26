@@ -43,7 +43,6 @@ firstName.addEventListener('input', function(){
 // Question 4
 // Try change event first
 // There is another event which fires for every character. This is what we want to use.
-let 
 
 
 // Question 5
